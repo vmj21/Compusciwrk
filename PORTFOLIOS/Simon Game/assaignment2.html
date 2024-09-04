@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Memory Game</title>
+    <link rel="stylesheet" href="assaignment2.css">
+
+</head>
+<body>
+    <div class="simon-game">
+        <div id="display">Highest Score: <span id="highest-score">0</span></div>
+        <div class="controls">
+            <button id="start-btn" onclick="startGame()">START</button> <!--START BUTTON-->
+            <div id="game-status" class="red"></div> 
+            <div id="game-status" class="green"></div>
+            <div id="score">Score: <span id="current-score">0</span></div>
+            <button id="highest-score-btn" onclick="showHighestScore()"><span id="highest-score">0</span></button>
+            <button id="score-btn" onclick="showScore()"><span id="current-score">0</span></button>
+        </div>
+        <div id="simon-board">
+            <div class="color-button" id="green"></div> <!--GREEN CIRCLE-->
+            <div class="color-button" id="red"></div> <!--RED CIRCLE-->
+            <div class="color-button" id="yellow"></div> <!--YELLOW CIRCLE-->
+            <div class="color-button" id="blue"></div>   <!--BLUE CIRCLE-->
+            <div class="color-button" id="black"></div>   <!--BLACK CIRCLE-->
+        </div>
+    </div>
+    <script src="assaignment2.js"></script>
+</body>
+</html>

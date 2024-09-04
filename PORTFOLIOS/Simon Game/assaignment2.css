@@ -1,0 +1,132 @@
+/* simongamecss.css */
+
+/* Font family */
+body {
+    background-color: grey;
+    font-family: 'Orbitron', sans-serif;
+}
+
+ /* style for red circle for status on game if on or off*/
+.game-status-red, .game-status-green {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+    left: 760px;
+    top: 385px; /* Adjust based on layout */
+    z-index: 5;
+}
+ /* style for score button*/
+.game-status-red {
+    background-color: red;
+}
+
+.game-status-green {
+    background-color: green;
+}
+.color-button.active {
+    border-color: #ffffff; /* Bright white border color for the flash */
+    background-color: #ffffff; /* Bright white background color for the flash */
+    transition: background-color 0.2s, border-color 0.2s; /* Increase transition duration for a more prominent flash */
+}
+
+
+ /* style for start button*/
+#start-btn
+   {
+    position:absolute;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    left: 50%; /* Adjust this value to position the button */
+    top: 50%; /* Adjust this value to position the button */
+    transform: translate(-50%, -50%); /* Centers the button based on its own dimensions*/
+    z-index: 8; /* Ensures it appears on top of other positioned elements */
+    }
+     /* style for highest score button*/
+    #highest-score-btn
+    {
+    width: 62px;
+    height: 62px;
+    position:absolute;
+    color: grey;
+    border: none;
+    cursor: pointer;
+    font-family: 'Orbitron', sans-serif;
+    left: 650px; /* Adjust this value to position the button */
+    top: 355px; /* Adjust this value to position the button */
+    z-index: 8; /* Ensures it appears on top of other positioned elements */
+    }
+    
+    /* style for score button*/
+    #score-btn
+    {
+        width: 55px;
+        height: 55px;
+       position:absolute;
+       color: grey;
+       border: none;
+       cursor: pointer;
+       font-family: 'Orbitron', sans-serif;
+       left: 825px; 
+       top: 355px; 
+       z-index: 8;
+    }
+
+/* Style for the color buttons */
+.color-button {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    cursor: pointer;
+    border: 10px solid black;
+    position: absolute; 
+    z-index: 3;
+    
+}
+
+/* Define the colors for each button */
+#green {
+    background-color: green;
+    left: 550px; 
+    top: 140px;
+    z-index: 4;
+}
+
+#red {
+    background-color: red;
+    left: 855px; 
+    top: 140px;
+    z-index: 4; 
+}
+
+
+#yellow {
+    background-color: yellow;
+    left: 545px; 
+    top: 435px;
+    z-index: 4; 
+}
+
+#blue {
+    background-color: blue;
+    left: 855px; 
+    top: 435px;
+    z-index: 4; 
+}
+
+
+/* Style for the black circle */
+#black {
+    background-color: black;
+    width: 310px;
+    height: 310px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: absolute;
+    left: 600px; 
+    top: 200px; 
+}
+
+

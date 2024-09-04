@@ -1,0 +1,111 @@
+body {
+	background-color: #EFEFEF;
+}
+
+
+.shape .button {
+  display: none;
+}
+
+
+.shape:hover .button {
+  display: inline-block; 
+}
+
+.shape {
+	margin: auto;
+  position: relative;
+    left: 0;
+    right: 0;
+}
+
+.triangle{
+    width: 0;
+    height: 0;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    border-bottom: 100px solid red;
+}
+
+
+.trapezoid1 {
+  width: 145px;
+  height: 15px;
+  border-bottom: 50px solid orange;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;  
+}
+
+.trapezoid2 {
+  width: 257px;
+  height: 5px;
+  border-bottom: 55px solid yellow;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;  
+}
+
+
+.trapezoid3 {
+  width: 360px;
+  height: 2px;
+  border-bottom: 60px solid blue;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;  
+}
+
+.trapezoid4 {
+  width: 460px;
+  height: 0px;
+  border-bottom: 62px solid brown;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;  
+}
+
+.trapezoid5 {
+  width: 560px;
+  height: 0px;
+  border-bottom: 65px solid green;
+  border-left: 50px solid transparent;
+  border-right: 50px solid transparent;  
+}
+
+.stage1{
+  position: fixed;
+  top: 55px;
+  left: 760px;
+}
+
+
+.stage2{
+  position: fixed;
+  top: 121px;
+  left: 760px;
+}
+
+
+.stage3{
+  position: fixed;
+  top: 175px;
+  left: 760px;
+}
+
+
+.stage4{
+  position: fixed;
+  top: 233px;
+  left: 760px;
+}
+
+
+.stage5{
+  position: fixed;
+  top: 295px;
+  left: 760px;
+}
+
+
+.stage6{
+  position: fixed;
+  top: 356px;
+  left: 760px;
+}

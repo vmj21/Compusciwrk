@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobile Head Store Manager</title>
+<link href="assaignment-05.css" rel="stylesheet">
+</head>
+<body>
+<div class="container at-4">
+<div id="notificationbox" class="alert" role="alert" style="display:none;"></div>
+
+<h1>Customer Management</h1>
+<form id="customerform">
+  <div class="form-group">
+    <label for="customerId">Customer ID (for Delete and Update)</label>
+    <input type="text" class="form-control" id="customerId" name="customerId">
+  </div>
+  
+  <div class="form-group">
+    <label for="title">Title</label>
+    <select class="form-control" id="title" name="title" required>
+      <option value="Mr">Mr</option>
+      <option value="Ms">Ms</option>
+      <option value="Mrs">Mrs</option>
+      <option value="Dr">Dr</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="firstname">First Name</label>
+    <input type="text" class="form-control" id="firstname" name="firstname" required>
+  </div>
+
+  <div class="form-group">
+    <label for="surname">Surname</label>
+    <input type="text" class="form-control" id="surname" name="surname" required>
+  </div>
+
+  <div class="form-group">
+    <label for="mobile">Mobile</label>
+    <input type="text" class="form-control" id="mobile" name="mobile" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input type="text" class="form-control" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="homeaddress1">HomeAddress1</label>
+    <input type="text" class="form-control" id="homeaddress1" name="homeaddress1" required>
+  </div>
+
+  <div class="form-group">
+    <label for="homeaddress2">HomeAddress2</label>
+    <input type="text" class="form-control" id="homeaddress2" name="homeaddress2" required>
+  </div>
+
+  <div class="form-group">
+    <label for="hometown">Home Town</label>
+    <input type="text" class="form-control" id="hometown" name="hometown" required>
+  </div>
+
+  <div class="form-group">
+    <label for="county/city">County/City</label>
+    <input type="text" class="form-control" id="county/city" name="county/city" required>
+  </div>
+
+  <div class="form-group">
+    <label for="eircode">Eircode</label>
+    <input type="text" class="form-control" id="eircode" name="eircode" required>
+  </div>
+
+  <div class="form-group">
+    <label for="ShippingAddress1">ShippingAddress1</label>
+    <input type="text" class="form-control" id="ShippingAddress1" name="ShippingAddress1" required>
+  </div>
+
+  <div class="form-group">
+    <label for="ShippingAddress2">ShippingAddress2(Opt)</label>
+    <input type="text" class="form-control" id="ShippingAddress2" name="ShippingAddress2" required>
+  </div>
+
+  <div class="form-group">
+    <label for="shippingtown">Shipping Town</label>
+    <input type="text" class="form-control" id="shippingtown" name="shippingtown" required>
+  </div>
+
+  <div class="form-group">
+    <label for="shippingcounty/city">Shipping County/City</label>
+    <input type="text" class="form-control" id="shippingcounty/city" name="shippingcounty/city" required>
+  </div>
+
+  <div class="form-group">
+    <label for="shippingeircode">Shipping Eircode</label>
+    <input type="text" class="form-control" id="shippingeircode" name="shippingeircode" required>
+  </div>
+
+  <button type="submit" class="btn btn-primary">Create/Update Customer</button>
+  <button type="button" id="retrievecustomerbtn" class="btn btn-info">Retrieve Customer</button>
+  <button type="button" id="deletecustomerbtn" class="btn btn-danger">Delete Customer</button>
+
+</form>
+  
+<h2>Order Management</h2>
+<form id="orderform">
+  <div class="form-group">
+    <label for="orderid">Order ID (for Update/Delete)</label>
+    <input type="text" class="form-control" id="orderid" name="orderid" required>
+  </div>
+
+  <div class="form-group">
+    <label for="orderdate">Order Date</label>
+    <input type="date" class="form-control" id="orderdate" name="orderdate" required>
+  </div>
+
+  <div class="form-group">
+    <label for="orderamount">Amount</label>
+    <input type="number" class="form-control" id="orderamount" name="orderamount" required>
+  </div>
+    
+  <button type="submit" class="btn btn-primary">Create/Update Order</button>
+  <button type="button" class="btn btn-info retrieve-btn" data-form="orderform">Retrieve Order</button>
+  <button type="button" class="btn btn-danger delete-btn" data-form="orderform">Delete Order</button>
+</form>
+</div>
+  
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="assaignment-05.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

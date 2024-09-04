@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AJAX CRUD Demo</title>
+</head>
+<body>
+    <h1>AJAX CRUD Demo</h1>
+
+    <h2>Create User</h2>
+    <input type="text" id="title" placeholder="Title"><br>
+    <input type="text" id="firstname" placeholder="FirstName"><br>
+    <input type="text" id="surname" placeholder="Surname"><br>
+    <input type="text" id="mobile" placeholder="Mobile"><br>
+    <input type="text" id="email" placeholder="Email"><br>
+    <input type="text" id="AddressLine1" placeholder="AddressLine1"><br>
+    <input type="text" id="AddressLine2" placeholder="AddressLine2"><br>
+    <input type="text" id="Town" placeholder="Town"><br>
+    <input type="text" id="County" placeholder="County"><br>
+    <input type="text" id="Eircode" placeholder="Eircode"><br>
+    <!-- Other input fields for user info -->
+    <button onclick="createUser()">Create User</button>
+
+    <h2>Search Users</h2>
+    <input type="text" id="searchName" placeholder="Search Name"><br>
+    <button onclick="searchUsers()">Search</button>
+
+    <div id="userList"></div>
+
+    <script src="assaignment-04js.js"></script>
+</body>
+</html>
